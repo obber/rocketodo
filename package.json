@@ -1,0 +1,32 @@
+{
+  "name": "rocketodo2",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-register": "^6.24.0",
+    "nodemon": "^1.11.0",
+    "react-scripts": "0.9.5"
+  },
+  "dependencies": {
+    "passport": "^0.3.2",
+    "passport-google-oauth20": "^1.0.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router": "^4.0.0",
+    "redux": "^3.6.0",
+    "socket.io": "^1.7.3",
+    "socket.io-client": "^1.7.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "serve": "nodemon bin/entry.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3001"
+}
