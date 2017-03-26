@@ -6,11 +6,14 @@ import { Router, Route, Switch } from 'react-router';
 
 import rootReducer from './reducers';
 import App from './components/App';
+import Socket from './modules/Socket';
 
 const store = createStore(rootReducer);
 
 ReactDOM.render(
   <Provider store={store}>
-    <App store={store}/>
+    <App socket={new Socket({
+      store
+    })}/>
   </Provider>
 , document.getElementById('app'));

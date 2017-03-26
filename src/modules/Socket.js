@@ -16,6 +16,11 @@ class Socket {
     return this;
   }
 
+  disconnect() {
+    this.socket.disconnect();
+    console.log('disconnecting');
+  }
+
   _init() {
     this.socket.on('connected', (data) => {
       this._store.dispatch(newTodos(data.todos));
